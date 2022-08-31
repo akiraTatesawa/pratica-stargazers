@@ -40,6 +40,8 @@ export async function errorHandlingMiddleware(
       status: 422,
     },
   };
+
+  console.log(error);
   const { message, type } = error;
 
   if (Errors[type]?.status) {

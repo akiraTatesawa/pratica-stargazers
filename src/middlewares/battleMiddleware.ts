@@ -3,7 +3,7 @@ import { CustomError } from "../classes/CustomError";
 import { battleSchema } from "../schemas/battleSchema";
 
 export async function validateBattle(
-  req: Request<{}, {}, { firsUser: string; secondUser: string }>,
+  req: Request<{}, {}, { firstUser: string; secondUser: string }>,
   res: Response,
   next: NextFunction
 ) {
